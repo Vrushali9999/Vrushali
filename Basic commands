@@ -1,0 +1,73 @@
+Basic Commands in Linux :
+
+1. pwd :pwd stands for Print Working Directory. It prints the path of the working directory, starting from the root.
+          pwd is shell built-in command(pwd) or an actual binary(/bin/pwd).
+          $PWD is an environment variable which stores the path of the current directory.
+          This command has two flags.
+
+2.mkdir  : mkdir command in Linux allows the user to create directories (also referred to as folders in some operating systems ). This command can create multiple directories at once as well as set the permissions for the directories. 
+ 
+3. head  : The head command, as the name implies, print the top N number of data of the given input. By default, it prints the first 10 lines of the specified files. If more than one file name is provided then data from each file is preceded by its file name. 
+          syntax : head [option] ..... file
+
+4. cd   : cd command in linux known as change directory command. It is used to change current working directory.
+
+         Syntax:
+
+         $ cd [directory]
+
+5. cp   :cp stands for copy. This command is used to copy files or group of files or directory. It creates an exact image of a file on a disk with different file name.
+
+
+6.  tail   : It is the complementary of head command.The tail command, as the name implies, print the last N number of data of the given input. By default it prints the last 10 lines of the specified files. If more than one file name is provided then data from each file is precedes by its file name.
+
+         Syntax:
+
+         tail [OPTION]... [FILE]...
+
+7.  ls     :  ls is a Linux shell command that lists directory contents of files and directories.
+
+8. ls - l : To show long listing information about the file/directory.
+
+9. cp -r   :Option 'r' with the copy command can be used to copy a directory including all its content from a source directory to the destination directory.
+
+           Syntax:
+
+            cp -r <sourceDirectory> <destinationDirectory>  
+
+10. ping  : ping command is a simple utility used to check whether a network is available and if a host is reachable.
+           
+
+11.  cat   :Cat(concatenate) command is very frequently used in Linux. It reads data from the file and gives their content as output. It helps us to create, view, concatenate files.
+
+12.  mv   :mv stands for move. mv is used to move one or more files or directories from one place to another in a file system
+
+13.  uname  :The command ‘uname‘ displays the information about the system.
+
+             Syntax:
+
+             uname [OPTION]
+
+14.  touch  : The touch command is a standard command used in UNIX/Linux operating system which is used to create, change and modify timestamps of a file
+
+15.  rm   : rm is a command-line utility for removing files and directories.
+
+16. top  :top command is used to show the Linux processes. It provides a dynamic real-time view of the running system. 
+
+17.  df  : The df command (short for disk free), is used to display information related to file systems about total space and available space.
+
+          Syntax :
+
+          df [OPTION]... [FILE]...
+
+18. rm - r  : rm -r will recursively delete a directory and all its contents (normally rm will not delete directories, while rmdir will only delete empty directories).
+
+19. man  :   man command in Linux is used to display the user manual of any command that we can run on the terminal.
+
+20. chmod  : the chmod command is used to change the access mode of a file.
+		The name is an abbreviation of change mode.
+
+		Syntax :
+
+		chmod [reference][operator][mode] file..
+
