@@ -1,0 +1,91 @@
+User and Groups 
+
+
+User :
+      A user or account of a system is uniquely identified by a numerical number called the UID (unique identification number). There are two types of users – the root or super user and normal users. A root or super user can access all the files, while the normal user has limited access to files.
+      
+      - # sign is given to the root user . Root user has many privilges . Root user cannot be tracked . 
+      - users are created for accountability.
+      Sudo User-
+     -Basically sudo user is a tool that allows users & groups to have access to commands they normally would not able to access.
+     -sudo enables user to have administration privileges without logging in directly as a root user.
+
+Group : A group is a collection of users. The main purpose of the groups is to define a set of privileges like read, write, or execute permission for a given resource that can be shared among the users within the group. Users can be added to an existing group to utilize the privileges it grants.
+       - group is like a task force.
+       - after creating a particular group , then after asigning resource to that group , the user in than group can acess all the resources .
+       - group is to give collectively access to the users .
+       - user are created to claim responsibilty .
+
+whenever u create a file in linux system , there is a user and group attached to it .
+ 
+       1.Primary Group-
+       - it is the default group that user belongs to
+       - this is generally stored in /etc/passwd file
+       2.Secondary Group-
+       - once the user is created with the primary group it can be added to the other groups.
+       - generally stored in /etc/group file
+
+Commands :
+
+
+
+1. useradd  :  a ‘useradd‘ command is a command that is used for adding/creating user accounts in Linux 
+             When we run ‘useradd‘ command in Linux terminal, it performs following major things:
+		It edits /etc/passwd, /etc/shadow, /etc/group and /etc/gshadow files for the newly created User account.
+		Creates and populate a home directory for the new user.
+		Sets permissions and ownerships to home directory.
+		Basic syntax of command is:
+
+		useradd [options] username
+
+2. userdel  :  userdel command in Linux system is used to delete a user account and related files. This command basically modifies the system account files, deleting all the entries which refer to the username LOGIN. It is a low-level utility for removing the users.
+
+		Syntax:
+
+		userdel [options] LOGIN
+
+3. addgroup  :userdel command in Linux system is used to delete a user account and related files. This command basically modifies the system account files, deleting all the entries which refer to the username LOGIN. It is a low-level utility for removing the users.
+
+		Syntax:
+
+		userdel [options] LOGIN
+
+4. delgroup  :To delete a group in Linux, you can use a tool called delgroup. delgroup is a friendlier front-end to the groupdel program. The delgroup command takes a single parameter: the group name. Note that you can’t delete the primary group of an existing user: you must delete the user first or change its primary group.
+
+
+5.  usermod  :usermod is a command-line utility that allows you to modify a user’s login information.
+		The syntax of the usermod command takes the following form:
+
+		usermod [options] USER
+		Copy
+		root or users with sudo access can invoke usermod and modify a user account. On success, the command does not display any output.
+
+
+6.  chage  :chage command is used to view and change the user password expiry information. This command is used when the login is to be provided for a user for limited amount of time or when it is necessary to change the login password time to time. With the help of this command we can view the aging information of an account, date when the password was previously changed, set the password changing time, lock an account after certain amount of time etc
+
+.
+
+		The syntax for chage command is given below :
+
+		SYNTAX:
+
+		chage [options] LOGIN
+
+7.  sudo  :The sudo command allows you to run programs with the security privileges of another user (by default, as the superuser). It prompts you for your personal password and confirms your request to execute a command by checking a file, called sudoers, which the system administrator configures.
+
+8. id  :id command in Linux is used to find out user and group names and numeric ID’s (UID or group ID) of the current user or any other user in the server. This command is useful to find out the following information as listed below:
+
+		User name and real user id.
+		Find out the specific Users UID.
+ 		Show the UID and all groups associated with a user.
+		List out all the groups a user belongs to.
+		Display security context of the current user.
+		Syntax:
+
+		id [OPTION]… [USER]
+	
+9. su  :The su (short for substitute or switch user) utility allows you to run commands with another user’s privileges, by default the root user.
+
+		Using su is the simplest way to switch to the administrative account in the current login session.
+
+10.  cat /etc /passwd  :to confirm wheather the user is added or not
